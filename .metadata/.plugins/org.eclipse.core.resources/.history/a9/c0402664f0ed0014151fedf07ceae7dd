@@ -1,0 +1,34 @@
+package lekciq2;
+import java.util.Scanner;
+public class Three {
+
+	public static void main(String[] args) {
+		
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Name|Surname|Years|Gender|CitizenNumber|Telephone");
+		
+		System.out.println("Enter First name:");
+		String name=input.nextLine();
+
+		System.out.println("Enter Surname:");
+		String familyName=input.nextLine();
+		
+		System.out.println("Enter years:");
+		int years = input.nextInt();
+		
+		input.nextLine();
+		
+		System.out.println("Enter gender: ");
+		char gender=input.next(); //char c = reader.next(".").charAt(0);
+		
+		System.out.println("Enter ID: ");
+		long citNum=input.nextLong();
+		
+		System.out.println("Enter Telephone: ");
+		String phone=input.nextLine(); 
+		
+		System.out.println("Persons name is: " +name +" Surname is: " +familyName +" Years are: " +years +" Gender is: " +gender +" Citizen number is: " +citNum +" The phone is: " +phone);
+		input.close();
+	}
+
+}
