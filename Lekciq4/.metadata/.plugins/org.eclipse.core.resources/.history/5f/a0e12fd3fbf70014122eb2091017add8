@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Prog2 {
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in, "UTF-8");
+		
+		System.out.println("Please enter n: ");
+        int n = input.nextInt(); //can be long again
+        
+        input.close();
+        
+        for(int i = 1; i < n; i++){
+        	if((i%3)!=0 || (i%7)!=0){
+        		System.out.println(i);
+        	}
+        }
+        input.close();
+	}
+
+}

@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+
+public class Prog5 {
+
+	public static void main(String[] args) {
+		
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter number one: ");
+		
+        long n = input.nextLong();
+        System.out.println("Enter number two: ");
+       
+        long k = input.nextLong();
+        
+        long facN = 1;
+        
+        long facK = 1;
+        
+        long facKN = 1;
+        
+        for(int i=1 ;i<=n; i++){
+        	facN *= i;
+        	
+        }
+        
+        for(int i=1; i<=k; i++){
+        	facK *= i;
+        	
+        }
+        
+       
+        for(int i=1; i<=(n-k); i++){
+        	facKN *= i;
+        	
+        }
+        
+        long result=((facN * facK)/facKN);
+        System.out.println(result);
+        
+        input.close();
+	}
+
+}
