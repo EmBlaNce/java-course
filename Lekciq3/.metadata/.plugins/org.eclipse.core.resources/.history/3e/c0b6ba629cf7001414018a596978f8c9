@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class Prog2 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		System.out.println("Please enter the firts real number: ");
+        double first = input.nextDouble();
+        
+        System.out.println("Please enter the second real number: ");
+        double second = input.nextDouble();
+        
+        input.close();
+        
+        System.out.println("The sign is: ");
+        
+        if(first < 0 && second > 0){
+        	System.out.print("-");
+        }
+        
+        if(first > 0 && second < 0){
+        	System.out.print("-");
+        }
+        
+        if(first < 0 && second < 0){
+        	System.out.print("+");
+        }
+        
+        if(first > 0 && second > 0){
+        	System.out.print("+");
+        }
+
+	}
+}

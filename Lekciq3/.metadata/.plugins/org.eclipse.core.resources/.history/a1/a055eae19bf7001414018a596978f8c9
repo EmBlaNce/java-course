@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class P1 {
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter first number : ");
+		int first=input.nextInt();
+        
+        System.out.println("Enter second number: ");
+        int second=input.nextInt();
+        
+        if((first>0 && second>0)||(first<0 && second<0)){
+        	System.out.println("The answer is: +");
+        	
+        }
+        if((first<0 && second>0)||(first>0 && second<0)){
+        	System.out.println("The answer is: -");
+       
+        }
+        
+        input.close();
+
+	}
+}
