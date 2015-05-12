@@ -1,0 +1,17 @@
+
+public class Prog3 {
+
+	public static void main(String[] args) {
+		int[] massive= new int[10];  //Moje da se vuvejda i ot potrebitelq, ne razbrah tochno v uslovieto kakvo se iziskva
+		
+		for(int i=0; i<10; i++){
+			massive[i] = i*10;
+		}
+		
+		for(int k=0; k<10; k++){
+			 System.out.println("Result "+" is: "+massive[k]); 
+		 }
+
+	}
+
+}
