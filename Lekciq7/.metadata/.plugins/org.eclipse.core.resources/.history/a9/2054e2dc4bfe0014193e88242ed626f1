@@ -1,0 +1,75 @@
+
+public abstract class Person {
+	public static int counter=0;
+	protected String firstName;
+	protected String lastName;
+	protected int years;
+	protected int workExp;
+
+	
+	public Person(){
+		this.firstName = "";
+		this.lastName = "";
+		this.years = 0;
+		this.workExp = 0;
+	}
+	
+	public Person(String firstName, String lastName, int years, int workExp){
+		this();
+		
+		setFirstName(firstName);
+		setLastName(lastName);
+		setYears(years);
+		setWorkExp(workExp);
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+		counter++;
+	}
+	
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+		counter++;
+	}
+
+	public int getYears() {
+		return years;
+	}
+
+	public void setYears(int years) {
+		this.years = years;
+		counter++;
+	}
+	
+	public int getWorkExp() {
+		return workExp;
+		
+	}
+	
+
+	public void setWorkExp(int workExp) {
+		if(workExp<0){
+			System.out.println("Wrong working experience.");
+			System.exit(workExp);
+		}
+		else{
+		this.workExp = workExp;
+		}
+		counter++;
+	}
+	
+	public void greet(){
+		System.out.println("Hello I am " +  this.firstName + " " + this.lastName);
+		System.out.println("I am " +  this.years + ". years old");
+		System.out.println("I have " +  this.workExp + " years experience.");
+	}
+}

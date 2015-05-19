@@ -1,0 +1,34 @@
+
+public class SchoolTeacher extends Teacher{
+	public String schoolclass;
+	
+	public SchoolTeacher(){
+		super();
+		this.schoolclass = "";
+	}
+	
+	public SchoolTeacher(String firstName, String lastName, int years, int workExp, String subject, String scoolclass){
+		super(firstName, lastName, years, workExp, subject);
+		
+		setScoolClass(scoolclass);
+	}
+
+	public String getScoolClass() {
+		return schoolclass;
+	}
+
+	public void setScoolClass(String scoolclass) {
+		this.schoolclass = scoolclass;
+	}
+	
+	public void sayClass(){
+		System.out.println("This class is " + this.schoolclass);
+		System.out.println("I can check your homework.");
+		
+	}
+	
+	public void sayJoke(){
+		System.out.println("I will tell you some jokes.");
+	}
+
+}

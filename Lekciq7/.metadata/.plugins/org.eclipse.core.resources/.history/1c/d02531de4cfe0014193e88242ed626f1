@@ -1,0 +1,58 @@
+
+public class Nasledqvane {
+
+	public static void main(String[] args) {
+		
+		Teacher Stela = new Teacher("Stela", "Stefanova", 59, 29, "English");
+		Stela.greet();
+		Stela.sayTeaching();
+		Stela.checking();
+		Stela.hello();
+		Stela.goodbye();
+		
+		System.out.println();
+		
+		Lecturer Lazar = new Lecturer("Lazar", "Sestrimski", 28, 4, "Technical university of Sofia");
+		Lazar.greet();
+		Lazar.sayWhere();
+		Lazar.Lchecking();
+		Lazar.teaching();
+		Lazar.sayHi();
+		
+		System.out.println();
+		
+		Professor Gotseva = new Professor("Daniela", "Gotseva", 56, 34, "TUES", "Dean");
+		Gotseva.greet();
+		Gotseva.sayWhere();
+		Gotseva.sayExperience();
+		Gotseva.sayMakeExam();
+		
+		System.out.println();
+		
+		Assistant Stoyan = new Assistant("Stoyan ", "Bogdanov", 25, 1, "Tu-Sofia", true);
+		Stoyan.greet();
+		Stoyan.sayWhere();
+		Stoyan.sayChief();
+		Stoyan.sayScience();
+		Stoyan.sayCheckExam();
+		
+		System.out.println();
+		
+		SchoolTeacher Bulgar = new SchoolTeacher("Pesho", "Slepoto", 18, 100, "Everything", "2A");
+		Bulgar.greet();
+		Bulgar.sayTeaching();
+		Bulgar.sayClass();
+		Bulgar.sayJoke();
+		
+		System.out.println();
+		
+		CollegeTeacher Kiro = new CollegeTeacher("Kiro", "Slepoto", 19, 1, "More than anything", "305 rooms and 34 toilets.");
+		Kiro.greet();
+		Kiro.sayTeaching();
+		Kiro.sayCollege();
+		
+		System.out.println();
+		
+	}
+
+}
