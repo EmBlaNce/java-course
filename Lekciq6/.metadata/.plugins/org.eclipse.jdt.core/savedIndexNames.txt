@@ -1,0 +1,5 @@
+INDEX VERSION 1.127+D:\Java Stuff\My Repo\java-course\Lekciq6\.metadata\.plugins\org.eclipse.jdt.core
+2454449678.index
+188923828.index
+204438445.index
+2067824611.index

@@ -1,0 +1,11 @@
+
+public class Fahren {
+
+	public static void main(String[] args) {
+		
+		Convert mitko=new Convert(15);
+		mitko.print();
+
+	}
+
+}

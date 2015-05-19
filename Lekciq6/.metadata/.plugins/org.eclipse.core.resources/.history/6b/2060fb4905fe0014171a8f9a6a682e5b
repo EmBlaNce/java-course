@@ -1,0 +1,19 @@
+
+public class Convert {
+
+	
+	double faren;
+	
+	public Convert(){
+		
+		this.faren=0;
+	}
+	public Convert(double Celsius){
+		this();
+		this.faren = ((Celsius - 32)*5)/9;;
+		
+	}
+	void print(){
+		System.out.println("In Farenhait is:" +faren);
+	}
+}

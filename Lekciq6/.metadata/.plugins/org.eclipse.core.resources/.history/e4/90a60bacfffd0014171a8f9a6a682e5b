@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+
+public class Cats {
+
+	public static void main(String[] args) {
+		
+     Scanner input = new Scanner(System.in,"UTF-8");
+     
+     String name;
+     
+     int years;
+     
+     Cat[] arr = new Cat[10];
+     
+     for(int i = 0; i < 10; i++){
+    	 
+    	 System.out.println("Enter name : ");
+    	 name = input.nextLine();
+    	 
+    	 System.out.println("Enter years : ");
+    	 years = input.nextInt();
+    	 
+    	 input.nextLine();
+    	 
+    	 arr[i] = new Cat(name, years);
+     }
+     for(int k = 0; k < 10; k++){
+    	 arr[k].Say();
+     }
+input.close();
+	}
+
+}
