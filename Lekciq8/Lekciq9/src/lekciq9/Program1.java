@@ -1,0 +1,23 @@
+package lekciq9;
+import java.util.Scanner;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in, "UTF-8");
+		String word = null;
+		
+		System.out.print("Enter a word: ");
+		
+		word = scan.nextLine();
+		
+		StringBuilder str = new StringBuilder(word);
+		
+		str.reverse();
+		System.out.println("The word backwards : " + str.toString());
+		
+		scan.close();
+	}
+
+}

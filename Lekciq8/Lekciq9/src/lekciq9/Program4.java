@@ -1,0 +1,34 @@
+package lekciq9;
+//п.п. Сетих се как ша стане :D с regex
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in, "UTF-8");
+		
+		String word = null, text = null, regex = null;
+		
+		Pattern pattern = null;
+		Matcher matcher = null;
+		
+		System.out.print("Enter your text: ");
+		text = scan.nextLine();
+		System.out.print("Enter the word: ");
+		word = scan.nextLine();
+		
+		regex = "([A-Z][^.?!]*?)?(?<!\\w)(?i)(" + word + "|" + word + "s)(?!\\w)[^.?!]*?[.?!]{1,2}\"?";
+		pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+		matcher = pattern.matcher(text);
+		
+		while(matcher.find()) {
+			System.out.println(matcher.group());
+			
+		}
+		
+		scan.close();
+	}
+
+}
