@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+C:\Users\EmBlaNce\Desktop\Java\Homeworks\java-course\Homework11\.metadata\.plugins\org.eclipse.jdt.core
+2592520125.index

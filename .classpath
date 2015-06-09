@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Homework9,10/Homework9/src"/>
+	<classpathentry kind="src" path="lekciq2/src"/>
+	<classpathentry kind="src" path="Lekciq3/Lekciq3/src"/>
+	<classpathentry kind="src" path="Lekciq4/Lekciq4/src"/>
+	<classpathentry kind="src" path="Lekciq5/Lekciq5/src"/>
+	<classpathentry kind="src" path="Lekciq6/Prog1/src"/>
+	<classpathentry kind="src" path="Lekciq6/Prog2/src"/>
+	<classpathentry kind="src" path="Lekciq6/Prog3&amp;4/src"/>
+	<classpathentry kind="src" path="Lekciq6/Prog5/src"/>
+	<classpathentry kind="src" path="Lekciq7/Lekciq7/src"/>
+	<classpathentry kind="src" path="Lekciq8/Lekciq8/src"/>
+	<classpathentry kind="src" path="Lekciq8/Lekciq9/src"/>
+	<classpathentry kind="src" path="Proba/Gosho/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="lekciq2/bin"/>
+</classpath>

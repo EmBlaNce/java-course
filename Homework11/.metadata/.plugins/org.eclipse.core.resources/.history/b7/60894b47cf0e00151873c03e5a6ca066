@@ -1,0 +1,58 @@
+package homework11;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Prog2 {
+
+	public static void main(String[] args) {
+		String text = null;
+		
+		try {
+			text = readFile("read2.txt");
+		}
+		catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		} 
+		catch (ExceptionForSentence e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		
+		if (text != null) {
+			System.out.println(text);
+		}
+	}
+
+	public static String readFile(String fileName) throws FileNotFoundException,
+			IOException, ExceptionForSentence {
+		FileReader file = new FileReader(fileName);
+		BufferedReader reader = new BufferedReader(file);
+		StringBuilder stringbuilder = new StringBuilder();
+		String line = null;
+		
+		while (reader.ready()) {
+			line = reader.readLine();
+			if (line.endsWith(".")
+				|| line.endsWith("!")
+				|| line.endsWith("?")) {
+				stringbuilder.append(line);
+			} 
+			else {
+				reader.close();
+				file.close();
+				throw new ExceptionForSentence(" Incomplete sentence! ");
+			}
+		}
+		reader.close();
+		file.close();
+		return stringbuilder.toString();
+	}
+}

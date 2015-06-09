@@ -1,0 +1,12 @@
+package homework11;
+
+public class ExceptionForSentence extends Exception {
+
+	public ExceptionForSentence() {
+		super();
+	}
+	
+	public ExceptionForSentence(String message) {
+		super(message);
+	}
+}
